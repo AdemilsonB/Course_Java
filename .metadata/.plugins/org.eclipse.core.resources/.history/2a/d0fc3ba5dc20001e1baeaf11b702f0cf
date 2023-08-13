@@ -1,0 +1,34 @@
+package entrada_dados;
+import java.util.Locale;
+import java.util.Scanner;
+public class Main {
+
+	public static void main(String[] args) {
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		String x;
+		int y;
+		double w;
+		char c;
+		
+		String v1, v2, v3;
+		
+		x = sc.next();
+		System.out.println("Você digitou: " + x);
+		y = sc.nextInt();
+		System.out.println("Você inseriu: " + y);
+		w = sc.nextDouble();
+		System.out.println("Você digitou: " + w);
+		c = sc.next().charAt(0);
+		System.out.println("Você digitou: " + c);
+		
+		sc.next();
+		v1 = sc.nextLine();
+		v2 = sc.nextLine();
+		v3 = sc.nextLine();
+		System.out.printf("Você digitou: %s, %s, %s", v1, v2, v3);
+		
+		sc.close();
+	}
+
+}
